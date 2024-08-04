@@ -1,0 +1,1524 @@
+@import 'imports/component.css';
+@import 'imports/policy.css';
+@import 'imports/tables.css';
+@import 'imports/slick.css';
+@import 'imports/global.css';
+@import 'imports/staticcards.css';
+@import '../us/en/internal-applications/fonts.css';
+@import 'imports/article.css';
+
+/* Remove after 2023M.10 */
+:root  {
+    --truFontWtXBd:	700;
+    --truFontWtBd:	600;
+    --truFontWtRg:	400;
+    --truFontWtLt:	300;
+
+     /* 768 - 1600 */
+     --truTxtSize1: clamp(3.2rem, 2.173rem + 1.338vw, 4rem);
+     --truTxtSize2: clamp(2.8rem, 1.773rem + 1.338vw, 3.6rem);
+     --truTxtSize3: clamp(2.4rem, 1.886rem + 0.669vw, 2.8rem);
+     --truTxtSize4: clamp(2rem, 1.486rem + 0.669vw, 2.4rem);
+     --truTxtSize5: clamp(1.8rem, 1.543rem + 0.334vw, 2rem);
+     --truTxtSize6: clamp(1.6rem, 1.343rem + 0.334vw, 1.8rem);
+     --truTxtSizeBdy: 1.6rem;
+     --truTxtSizeMicro: 1.2rem;
+         /* Updated TDS colors - Please use these vars */
+  /* Updated TDS colors - Please use these vars */
+  /* Updated TDS colors - Please use these vars */
+
+--truPurple50: #F0ECF8;
+--truPurple100: #E5DDF4;
+--truPurple200: #CABCE3;
+--truPurple300: #A793C9;
+--truPurple400: #8B71B2;
+--truPurple500: #72569C;
+--truPurple600: #56387E;
+--truPurple700: #402561;
+--truPurple800: #2E1A47;
+--truPurple900: #2D1D42;
+--truPurple1000: #211730;
+
+--truDawn50: #ECEBFF;
+--truDawn100: #DAD9FF;
+--truDawn200: #C9C7FF;
+--truDawn300: #B9B6F4;
+--truDawn400: #A6A3E0;
+
+--truSky50: #E5F5F5;
+--truSky100: #CAEAEC;
+--truSky200: #B0E0E2;
+--truSky300: #6EC6C9;
+--truSky400: #30ABB5;
+--truSky500: #008A97;
+--truSky600: #006D7A;
+--truSky700: #00545F;
+--truSky800: #00444D;
+--truSky900: #06343A;
+--truSky1000: #051F22;
+
+--truNeutral0: #FFFFFF;
+--truNeutral50: #F7F7F7;
+--truNeutral100: #DBDBDB;
+--truNeutral300: #A8A8A8;
+--truNeutral500: #5C5C5C;
+--truNeutral700: #383838;
+--truNeutral800: #181818;
+--truNeutral900: #0D0D0D;
+--truNeutral1000: #000000;
+
+--truRuby50: #FFF2F0;
+--truRuby200: #FFB9AD;
+--truRuby400: #FF654D;
+--truRuby500: #DF4731;
+--truRuby600: #BE240E;
+--truRuby900: #451A13;
+--truRuby1000: #30130E;
+
+--truGold50: #FEF8F1;
+--truGold200: #F9D39F;
+--truGold300: #F5B45D;
+--truGold600: #96510D;
+--truGold900: #402804;
+--truGold1000: #2B1F10;
+
+--truEmerald50: #F1F9F3;
+--truEmerald200: #ABDEBD;
+--truEmerald400: #57BD7B;
+--truEmerald500: #008F49;
+--truEmerald600: #0D7232;
+--truEmerald900: #1B3423;
+--truEmerald1000: #1C241E;
+
+--truSapphire50: #F1F9FD;
+--truSapphire200: #A1DAF7;
+--truSapphire400: #45B0E6;
+--truSapphire500: #008BC5;
+--truSapphire600: #006699;
+--truSapphire900: #1A3646;
+--truSapphire1000: #16242C;
+
+--truSpinel400: #F3698C;
+--truSpinel500: #DB416F;
+
+--truClear: transparent;
+  /* Updated TDS colors - Please use these vars */
+  /* Updated TDS colors - Please use these vars */
+  /* Updated TDS colors - Please use these vars */
+
+  --truFontFamRg: 'TruistTrio','Truist Trio','Arial',sans-serif;
+    }
+
+main {max-width: 1920px;margin: 0 auto;}
+
+body {font-family: 'TruistTrio','Truist Trio','Arial','sans-serif';}
+.font-color-white {
+    color: #ffffff;
+}
+
+.truist-global-nav-header-icon .st0 {
+    fill: none;
+    stroke: none;
+}
+
+
+.truist-global-nav-header-icon .st1,
+.truist-global-nav-header-icon .st2 {
+    stroke: #2e1a47;
+    stroke-width: 1px;
+}
+
+.truist-globalnav-nav-link:hover .truist-global-nav-header-icon .st1,
+.truist-globalnav-nav-link:hover .truist-global-nav-header-icon .st1 {
+    stroke: #ffffff;
+}
+
+
+[data-page-type="mgmteampage" i][data-view-model="GridView" i] .more-item::after{
+display: none;
+}
+
+/*FILL TAB CUSTOM*/
+/**remove header in desktop**/
+.fill-tab__custom--remove-desktop-fill-tabs .comparison-nav__container {display: none !important;}
+
+/*modify headline in mobile*/
+@media (max-width: 795px){
+    .fill-tab__custom--headline {background-color: #2E1A47; padding-top: 4rem; padding-left: 4.167%; padding-right: 4.167%; margin-bottom: -1px; float: left; width: 100%;}
+    .fill-tab__custom--headline p,
+    .fill-tab__custom--headline h2,
+    .fill-tab__custom--headline h3 {color: #fff;}
+}
+
+/*FILL TAB ACCORDION ADDITIONAL CONTENT*/
+.fill-tab-accordion-additional-content .accordion-card-header:not(.fill-tab-accordion-additional-content .card-body .accordion-card-header) {text-align: center;}
+@media (max-width: 795px){
+    .fill-tab-accordion-additional-content .button-margin .btn-primary {border: none; margin-left: auto; margin-right: auto; font-size: 1.6rem; font-weight: 600;}
+    .fill-tab-accordion-additional-content .accordion-text.truist--icon-carat-up.after:after,
+    .fill-tab-accordion-additional-content .accordion-text.truist--icon-carat-down.after:after {font-size: 1.4rem;}
+    .fill-tab-accordion-additional-content .button-margin .btn-primary:hover,
+    .fill-tab-accordion-additional-content .button-margin .btn-primary:focus,
+    .fill-tab-accordion-additional-content .button-margin .btn-primary:active,
+    .fill-tab-accordion-additional-content .button-margin .btn-primary:active:focus {border: none; color: #2e1a47; background-color: transparent;}
+    .fill-tab-accordion-additional-content .btn-primary:hover .accordion-text,
+    .fill-tab-accordion-additional-content .btn-primary:hover .accordion-text:before,
+    .fill-tab-accordion-additional-content .btn-primary:hover .accordion-text:after,
+    .fill-tab-accordion-additional-content .btn-primary:focus .accordion-text,
+    .fill-tab-accordion-additional-content .btn-primary:focus .accordion-text:before,
+    .fill-tab-accordion-additional-content .btn-primary:focus .accordion-text:after {color: #2e1a47;}
+}
+@media (min-width: 796px){
+    .fill-tab-accordion-additional-content .accordion-card-header {display: none;}
+    .fill-tab-accordion-additional-content .card-body .accordion-card-header {display: block;}
+}
+
+/*PRODUCT COMPARISON MOBILE CONTENT*/
+.product-comparison-mobile-content--product-block {display: flex; margin-bottom: 4rem;}
+.product-comparison-mobile-content--product-image {max-width: 8rem; margin-right: 2rem;}
+.product-comparison-mobile-content--product-image > img {width: 100%; height: auto;}
+.product-comparison-mobile-content--product-text {flex: 2;}
+.product-comparison-mobile-content p {margin-bottom: 0;}
+.product-comparison-mobile-content--product-call-out {text-transform: uppercase; color: #937FA8; font-size: 1.4rem; font-weight: 600;}
+.product-comparison-mobile-content--product-title {font-size: 2rem;}
+.product-comparison-mobile-content--product-title::after {content: "\2192"; margin-left: 1rem; font-size: 2rem;}
+.product-comparison-mobile-content--product-title a {color: #563E7C; font-weight: 600; text-decoration: none;}
+/*display*/
+@media (min-width: 769px){
+    .table-product-comparison {display: block;}
+    .product-comparison-mobile-content {display: none;}
+}
+@media (max-width: 768px){
+    .table-product-comparison {display: none;}
+    .product-comparison-mobile-content {display: block;}
+}
+
+
+
+/*disclosures ordered list - alt*/
+.truist-tabs .ori-tabs__panel .disclosures-alt-ol ol {list-style: none; padding-left: 4rem; position: relative;}
+.truist-tabs .ori-tabs__panel .disclosures-alt-ol ol li {padding-bottom: 2rem;}
+.truist-tabs .ori-tabs__panel .disclosures-alt-ol ol li:first-child {padding-top: 2rem;}
+.truist-tabs .ori-tabs__panel .disclosures-alt-ol ol li:last-child {padding-bottom: 0;}
+.truist-tabs .ori-tabs__panel .disclosures-alt-ol ol li:before {counter-increment: mycounter; content: counter(mycounter)"."; position: absolute; left: 0;}
+.truist-tabs .ori-tabs__panel .disclosures-alt-ol ol:first-of-type {counter-reset: mycounter;}
+.truist-tabs .ori-tabs__panel .disclosures-alt-ol ol ol {list-style-type: lower-alpha; padding-left: 2rem;}
+.truist-tabs .ori-tabs__panel .disclosures-alt-ol ol ol li {padding-left: 2rem;}
+.truist-tabs .ori-tabs__panel .disclosures-alt-ol ol ol li:before {display: none;}
+.truist-tabs .ori-tabs__panel .disclosures-alt-ol ol ol.special {list-style-type: none; padding-left: 8rem;}
+
+
+
+
+/*Payment relief graphic bullets*/
+/* Graphic Bullets */
+ul.connect-list {margin-top: -1px;}
+ul.connect-list li {padding-left: 15px; margin-bottom: 2.5em; list-style: none;}
+
+.connect-content-list {font-size: 2.2rem; font-weight: 300; display: inline; margin-right: 0.5em;}
+
+ul.connect-list li {position: relative;
+    /* so that pseudoelements are positioned relatively to their "li"s*/
+    /* use padding-bottom instead of margin-bottom.*/
+    margin-bottom: 0; /* This overrides previously specified margin-bottom */
+    padding-bottom: 2.5em;
+}
+
+ul.connect-list li:after {
+    /* bullets */
+    content: url('/content/dam/truist-bank/us/en/icons/code/default-white.svg');
+    position: absolute;
+    left: -27px; /*adjust manually*/
+    top: 8px;
+}
+
+ul.connect-list li.active:after {
+    /* bullets */
+    content: url('/content/dam/truist-bank/us/en/icons/code/active.svg');
+    position: absolute;
+    left: -27px; /*adjust manually*/
+    top: 7px;
+}
+
+ul.connect-list li:before {
+    /* lines */
+    content:"";
+    position: absolute;
+    left: -16px; /* adjust manually */
+    border-left: 1px solid #2e1a47;
+    height: 100%;
+    width: 3px;
+}
+
+ul.connect-list li:first-child:before {
+   /* first li's line */
+   top: 30px; /* moves the line down so that it disappears under the bullet. Adjust manually */
+}
+
+ul.connect-list li:last-child:before {
+    /* last li's line */
+   height: 13px; /* shorten the line so it goes only up to the bullet. Is equal to first-child:before's top */
+}
+
+ul.connect-list li a {
+  color: #2e1a47;
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+ul.connect-list li a.active {
+  color: #2e1a47;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+ul.connect-list li a:hover {
+  color: #2e1a47;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+ul.connect-list li a:focus {
+  color: #2e1a47;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Graphic Bullets for Gray BG */
+.grid__bg-color--light-gray ul.connect-list li:after {
+    /* bullets */
+    content: url('/content/dam/truist-bank/us/en/icons/code/default-gray.svg');
+    position: absolute;
+    left: -27px; /*adjust manually*/
+    top: 8px;
+}
+
+.grid__bg-color--light-gray ul.connect-list li.active:after {
+    /* bullets */
+    content: url('/content/dam/truist-bank/us/en/icons/code/active.svg');
+    position: absolute;
+    left: -27px; /*adjust manually*/
+    top: 7px;
+}
+/* END Graphic Bullets */
+
+/*Jan Release Midnight Purple quick fix*/
+.grid__bg-color--midnight-purple-alternative {
+    background-color: #2e1a47;
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+}
+
+@media (max-width: 768px){
+.grid__bg-color--midnight-purple-alternative {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+}
+/*End Jan release*/
+
+
+/*article infograph*/
+
+.info-body-color {color: #2E1A47;}
+.tmp__article--hero--container .herobanner:not(.truist-carousel .herobanner) {display: block;}
+.tmp__article--body h2 {margin-left: 0;}
+hr {height: 20px; border-top: 2px solid #2E1A47;}
+.dcm-info-purple-bg {margin-top: 40px; background-color: #AFABC9; padding: 30px 70px; color: #2E1A47; position: relative; z-index: 2;  width: auto; margin: 30px -8.333%;}
+/*.grid__bg-color--midnight-purple {position: relative; z-index: 2; width: auto !important; margin: 30px -8.333% !important; padding: 0 70px;}*/
+.dcm-info-grey-bg {position: relative; z-index: 1; width: auto; margin: 30px -8.333%; padding: 0 70px; background-color: #F7F7F7;}
+.dcm-info-grey-bg h2 {margin-left: 0;}
+/*End Jan release*/
+
+/*march release*/
+@media screen and (min-width: 768px) {
+    .skipcontent {display: block !important;}
+}
+.iemodal p {line-height: 1.5;}
+.iemodal .ieclose {color: #2E1A47;}
+
+.findanadvisorv2 .finder-result-view .no-result-container .no-result-text p {font-size: 1.44em; line-height: 1.5;}
+/* END march release*/
+
+
+/*global nav promo space*/
+.truist-globalnav-dropdownlinks .truist-global-staticcard-column-transparent.nav-promo-dawn-purple {background: #AFABC9;}
+
+/*Personalization XF Custom Grid change*/
+.dcm-xf-custom-grid-12 .experiencefragment.aem-GridColumn.aem-GridColumn--default--12 {width: 100% !important;}
+.dcm-xf-custom-grid-12 .experiencefragment .aem-GridColumn--default--12 {width: 100% !important;}
+
+
+/*Profiles specialties lists*/
+.specialites-item ul.rte__list li {list-style-type:disc; margin-bottom:20px;}
+
+/*truistdotcom XF template fix*/
+.experiencefragment .aem-Grid.aem-Grid--default--24 > .aem-GridColumn.aem-GridColumn--default--12 {width: 100%;}
+
+/*TARGET*/
+/*target containers fix*/
+.at-element-marker .container,
+.at-element-marker ~ .container {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+@media (min-width: 576px) {
+    .at-element-marker .container,
+    .at-element-marker ~ .container {max-width: none;}
+}
+@media (min-width: 768px) {
+    .at-element-marker .container,
+    .at-element-marker ~ .container  {max-width: none;}
+}
+@media (min-width: 769px) {
+    .at-element-marker.herobanner .herobanner:not(.truist-carousel .herobanner) {padding: 0;}
+}
+@media (min-width: 992px) {
+    .at-element-marker .container,
+    .at-element-marker ~ .container  {max-width: none;}
+}
+@media (min-width: 1200px) {
+    .at-element-marker .container,
+    .at-element-marker ~ .container  {max-width: none;}
+}
+/*Target Update of at-element FIX*/
+.container.at-element-marker {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 576px) {
+.container.at-element-marker {max-width: none;}
+}
+@media (min-width: 768px) {
+.container.at-element-marker {max-width: none;}
+}
+@media (min-width: 769px) {
+    .container.at-element-marker.herobanner .herobanner:not(.truist-carousel .herobanner) {padding: 0;}
+}
+@media (min-width: 992px) {
+.container.at-element-marker {max-width: none;}
+}
+@media (min-width: 1200px) {
+.container.at-element-marker {max-width: none;}
+}
+
+
+/*FIX check list*/
+.list-checkmark li::before {
+    content: '';
+    font-family: none; /*reset*/
+    color: inherit; /*reset*/
+    font-size: inherit; /*reset*/
+    padding: 0; /*reset*/
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+    background: url(/content/dam/truist-bank/us/en/icons/code/icon-checkmark-small.svg);
+    background-repeat: no-repeat;
+    background-size: 2.4rem;
+    margin-right: 2.4rem;
+}
+
+/**TEMP FIX END**/
+/*****/
+
+/* OneTrust custcom footer links*/
+.footer__section #ot-sdk-btn.ot-sdk-show-settings:focus-visible {
+    border: 1px solid #fff;
+    border-radius: 4px;
+}
+
+/*Article ADA eyebrow header update*/
+.newsgridcont .grid-teaser-text span.eyebrow {
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+    color: #B0E0E2;
+    font-size: 1.8rem;
+    line-height: 1.25em;
+    margin-bottom: 1.5rem;
+	display: block;
+}
+
+.featured-article-list .grid-group-item .item-description h3 span.eyebrow {
+    display: block;
+    height: auto;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin: 0 0 1rem 0;
+    color: #707070;
+}
+
+.global-cta-btn {padding-bottom: 0;}
+.cta .global-cta-btn .gl-align-center {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.tmp__article .cmp-articlecards-list .card-text h3 span.eyebrow {
+	    text-decoration: none;
+    font-weight: 500;
+    display: block;
+    color: #B0E0E2;
+    font-size: 1.8rem;
+    line-height: 1.25em;
+    margin-bottom: 1.5rem;
+    display: flex;
+}
+
+
+@media (max-width: 768px) {
+  .aem-Grid.aem-Grid--phone--12 > .aem-GridColumn.aem-GridColumn--offset--phone--0 {
+    margin-left: 0%;
+  }
+  .aem-Grid.aem-Grid--phone--12 > .aem-GridColumn.aem-GridColumn--offset--phone--1 {
+    margin-left: 4.16666667%;
+  }
+  .aem-Grid.aem-Grid--phone--12 > .aem-GridColumn.aem-GridColumn--offset--phone--2 {
+    margin-left: 8.33333333%;
+  }
+  .aem-Grid.aem-Grid--phone--12 > .aem-GridColumn.aem-GridColumn--offset--phone--3 {
+    margin-left: 12.5%;
+  }
+  .aem-Grid.aem-Grid--phone--12 > .aem-GridColumn.aem-GridColumn--offset--phone--4 {
+    margin-left: 16.66666667%;
+  }
+  .aem-Grid.aem-Grid--phone--12 > .aem-GridColumn.aem-GridColumn--offset--phone--5 {
+    margin-left: 20.83333333%;
+  }
+  .aem-Grid.aem-Grid--phone--12 > .aem-GridColumn.aem-GridColumn--offset--phone--6 {
+    margin-left: 25%;
+  }
+  .aem-Grid.aem-Grid--phone--12 > .aem-GridColumn.aem-GridColumn--offset--phone--7 {
+    margin-left: 29.16666667%;
+  }
+  .aem-Grid.aem-Grid--phone--12 > .aem-GridColumn.aem-GridColumn--offset--phone--8 {
+    margin-left: 33.33333333%;
+  }
+  .aem-Grid.aem-Grid--phone--12 > .aem-GridColumn.aem-GridColumn--offset--phone--9 {
+    margin-left: 37.5%;
+  }
+  .aem-Grid.aem-Grid--phone--12 > .aem-GridColumn.aem-GridColumn--offset--phone--10 {
+    margin-left: 41.66666667%;
+  }
+  .aem-Grid.aem-Grid--phone--12 > .aem-GridColumn.aem-GridColumn--offset--phone--11 {
+    margin-left: 45.83333333%;
+  }
+  .aem-Grid.aem-Grid--phone--12 > .aem-GridColumn.aem-GridColumn--offset--phone--12 {
+    margin-left: 50%;
+  }
+}
+
+/*Global login QR updates */
+@media only screen and (max-width: 1150px) and (min-width: 991px) {
+.truist-globalnav-signon-container {
+    display: block;
+    position: absolute;
+    width: 430px;
+    right: 0;
+    top: 60px;
+    background-color: inherit;
+    z-index: 200;
+    background: #f7f7f7 0 0 no-repeat padding-box;
+}
+}
+
+.global-login .login-button {
+    font-weight: 700;
+    font-size: 1.6rem;
+    height: 55px;
+}
+
+.truist-globalnav-signon-container .global-login .login-signin-container {margin-bottom: 20px;}
+.truist-globalnav-signon-container .global-login .hr-and-text hr {margin-bottom: 20px; margin-top: 0;}
+.signon-only-mobile .hr-and-text {margin: auto 20px auto 30px;}
+.signon-only-mobile span {font-size: 1.4rem; text-transform: capitalize; margin-top: -12px;}
+.global-login .login-additional-info-container {
+    padding-right: 0;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.global-login .login-additional-info-container p.right-text {
+    display: inline-flex;
+    width: 100%;
+    justify-content: end;
+}
+.login-additional-info-container a {font-weight: 400;}
+
+.global-login .login-additional-info-container p.even-space-copy {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.qr-modal-container .qr-modal-container-columns .aem-Grid.aem-Grid--default--12 > .aem-GridColumn.aem-GridColumn--default--12.bg-none {width: 50%;}
+.qr-modal-container .qr-modal-container-columns .aem-Grid.aem-Grid--default--12 > .aem-GridColumn.aem-GridColumn--default--12.bg-light-gray {width: 50%;}
+.global-popup.custom-modal-qr .bg-light-gray {border-radius: 20px;}
+.global-popup.custom-modal-qr .modal-dialog .modal-content {
+    max-height: 95vh;
+	height: 517px;
+}
+.global-popup.custom-modal-qr .modal-dialog {
+    max-width: 795px;
+    margin: auto;
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+}
+.global-popup.custom-modal-qr .popup-modal-close {
+	left: calc(100% - 60px);
+}
+
+.global-popup.custom-modal-qr .popup-modal-close span {
+	float: right;
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.global-popup.custom-modal-qr .modal-body {
+	margin: 60px 30px 30px 30px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.global-popup.custom-modal-qr .modal-header {
+    padding: 0;
+	border-bottom: 0;
+}
+
+.qr-login-modal-copy {
+	display: flex;
+	flex-direction: column;
+}
+
+.qr-login-modal-copy .qr-modal-content {
+	display: block;
+	margin-right: 50px;
+}
+
+.qr-login-modal-img {
+	display: flex;
+}
+
+.qr-login-modal-img img {
+    margin-right: 30px;
+    width: 138px;
+    height: auto;
+}
+
+.qr-login-modal h3.modal-header {font-size: 3.2rem; font-weight: 300; line-height: 1.25em; color: #2e1A47; margin-bottom: 0; padding-left: 0; padding-right: 0;}
+.qr-login-modal p.modal-sub-desc {max-width: 556px; margin-bottom: 40px; line-height: 1.25em;}
+.qr-modal-content h4 {font-size: 1.8rem; font-weight: 700; line-height: 1.25em; color: #2E1A47; margin-bottom: 10px; margin-left: 35px;}
+.qr-container-app-store {padding: 20px;}
+.qr-container-app-store .qr-modal-content h4 {margin-left: 0;}
+.qr-container-app-store .qr-modal-content:before {display: none;}
+.qr-modal-content p {font-size: 1.8rem; color: #707070; line-height: 1.25em;}
+
+.global-popup.custom-modal-qr .global-action-btn-qr {margin-top: 0;}
+.qr-modal-content:before {
+    content: "";
+    background-image: url(/content/dam/truist-bank/us/en/icons/icon-lightning-bolt.svg);
+    background-size: cover;
+    height: 25px;
+    width: 20px;
+    position: absolute;
+}
+
+.qr-secure p {font-size: 1.6rem; color: #707070; line-height: 1.25em; margin-bottom: 30px;}
+p.qr-bolt {font-size: 1.6rem; color: #707070; line-height: 1.25em; margin-bottom: 40px;}
+
+.qr-secure:before {
+    content: "";
+    background-image: url(/content/dam/truist-bank/us/en/icons/icon-money-shield-midnightpurple.svg);
+    background-size: cover;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+}
+
+@media only screen and (max-width: 991px) {
+.custom-modal-qr {display: none;}
+.global-login .login-additional-info-container p.right-text {
+	display: none;
+}
+
+/* HIDE PASSWORD ICON*/
+
+.global-login .password-not-visible-icon {
+    left: 85%;
+}
+
+}
+
+/* QR Modal signin code */
+
+/* AB Test OA Link Nav */
+.nav-oa-teal a {
+    background: #b0e0e2;
+    color: #2e1a47;
+    padding: 13px 10px;
+    border: 2px solid #b0e0e2;
+}
+
+.nav-oa-teal a:hover {
+    background: #fff;
+    color: #2e1a47;
+    padding: 13px 10px;
+	border:2px solid #2e1a47;
+}
+.nav-oa-teal:after {
+    display:none;
+}
+
+.nav-oa-purple a {
+    background: #2e1a47;
+    color: #fff !important;
+    padding: 13px 10px;
+    border: 2px solid #2e1a47;
+}
+
+.nav-oa-purple:hover a {
+    background: #fff;
+    color: #2e1a47 !important;
+    padding: 13px 10px;
+    border: 2px solid #2e1a47;
+	text-decoration: none;
+}
+
+.nav-oa-purple:after {
+    display:none;
+}
+.nav-oa-default a {}
+/* END AB Test OA Link Nav */
+
+
+/* Secondary nav hot fix release 5/11/23 */
+#SubPage-Navigation-2006430047 {display: none !important;}
+/* END Secondary nav hot fix */
+
+/* Hide Wealth ADA Form within Articles */
+#gridLayout-cta-pdf .cta__display--inline {margin-right: 0;}
+#cta-accessible-pdf {display:none;}
+#popup-component-accessible-pdf {display: none;}
+/* END Hide Wealth ADA Form within Articles */
+
+/* Next Gen CTA Buttons */
+.cta .global-cta-btn a, .cta .btn {
+    padding: 12px 24px;
+    margin-bottom: 2rem;
+    width: auto;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all .15s ease-in;
+    font-weight: 700;
+}
+/* End Next Gen CTA Buttons */
+
+.max-1366 {
+    max-width: 1366px;
+    margin: auto;
+    width: 100%;
+}
+
+/*Site Improve ADA updates */
+/* .footer-primary-link .footer-nav-item--social .footer-nav-link {font-size: 1.8rem;} */
+
+
+/* subpage navigation release.M07 hotfix*/
+.signon-close-button {
+    display:none;
+}
+
+/*add hidden for pagination button*/
+
+.page-marker .pg-show-more.hide {
+    display: none !important;
+}
+
+@media (min-width: 768px){
+    .psuedo-crumb {
+        display: none !important;
+    }
+}
+
+
+/*Remove for release 2023.M10 */
+
+.truist-hero--image .btn-primary:not(disabled):not(.disabled).btn-cta,
+.truist-hero--midnight .btn-primary:not(disabled):not(.disabled).btn-cta,
+.truist-hero--dusk .btn-primary:not(disabled):not(.disabled).btn-cta,
+.truist-hero--dawn .btn-primary:not(disabled):not(.disabled).btn-cta,
+.truist-hero--dark-gray .btn-primary:not(disabled):not(.disabled).btn-cta,
+.truist-hero--gray .btn-primary:not(disabled):not(.disabled).btn-cta,
+.truist-hero--white .btn-primary:not(disabled):not(.disabled).btn-cta,
+.truist-hero--login-menu .btn-primary:not(disabled):not(.disabled).btn-cta {
+    background-color: #fff;
+    color:#2e1a47;
+    border-radius: 5px;
+    border:solid 2px #fff;
+    margin-right: 10px;
+    font-weight: 700;
+    box-shadow: none;
+}
+
+.truist-hero--image .btn-primary:not(disabled):not(.disabled).btn-cta:hover,
+.truist-hero--midnight .btn-primary:not(disabled):not(.disabled).btn-cta:hover,
+.truist-hero--dusk .btn-primary:not(disabled):not(.disabled).btn-cta:hover,
+.truist-hero--dawn .btn-primary:not(disabled):not(.disabled).btn-cta:hover,
+/* .truist-hero--mist .btn-primary:not(disabled):not(.disabled).btn-cta:hover, */
+.truist-hero--dark-gray .btn-primary:not(disabled):not(.disabled).btn-cta:hover,
+.truist-hero--gray .btn-primary:not(disabled):not(.disabled).btn-cta:hover,
+.truist-hero--white .btn-primary:not(disabled):not(.disabled).btn-cta:hover,
+.truist-hero--login-menu .btn-primary:not(disabled):not(.disabled).btn-cta:hover {
+    border:solid 2px #fff;
+    border-radius: 5px;
+    background:transparent;
+    color:#fff;
+    margin-right: 10px;
+    font-weight: 700;
+    box-shadow: none;
+}
+
+.truist-hero--image .btn-primary:not(disabled):not(.disabled).btn-cta:active,
+.truist-hero--midnight .btn-primary:not(disabled):not(.disabled).btn-cta:active,
+.truist-hero--dusk .btn-primary:not(disabled):not(.disabled).btn-cta:active,
+.truist-hero--dawn .btn-primary:not(disabled):not(.disabled).btn-cta:active,
+/* .truist-hero--mist .btn-primary:not(disabled):not(.disabled).btn-cta:active, */
+.truist-hero--dark-gray .btn-primary:not(disabled):not(.disabled).btn-cta:active,
+.truist-hero--gray .btn-primary:not(disabled):not(.disabled).btn-cta:active,
+.truist-hero--white .btn-primary:not(disabled):not(.disabled).btn-cta:active,
+.truist-hero--login-menu .btn-primary:not(disabled):not(.disabled).btn-cta:active {
+    border:solid 2px #fff;
+    border-radius: 5px;
+    background:transparent;
+    color:#fff;
+    margin-right: 10px;
+    font-weight: 700;
+    box-shadow: none;
+}
+
+.truist-hero--gray .btn-primary:not(disabled):not(.disabled).btn-cta{
+    background-color: #2e1a47;
+    color: #fff;
+    border: 2px solid #2e1a47;
+}
+
+.truist-hero--gray .btn-primary:not(disabled):not(.disabled).btn-cta:hover,
+.truist-hero--gray .btn-primary:not(disabled):not(.disabled).btn-cta:focus {
+    background-color: transparent;
+    color: #2e1a47;
+
+}
+
+.heroImageComp .btn-primary:not(:disabled):not(.disabled):active {
+    background: #fff;
+    border: 1px solid #2e1a47;
+    color: #2e1a47;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus{
+    box-shadow: none;
+}
+
+.truist-hero--white .btn-primary:not(disabled):not(.disabled).btn-cta,
+.truist-hero--sky-blue .btn-primary:not(disabled):not(.disabled).btn-cta,
+.truist-hero--light-gray .btn-primary:not(disabled):not(.disabled).btn-cta,
+.truist-hero--very-light-gray .btn-primary:not(disabled):not(.disabled).btn-cta{
+    border: 2px solid#2e1a47;
+    border-radius: 5px;
+    background:transparent;
+    color:#2e1a47;
+    margin-right: 10px;
+    font-weight: 700;
+}
+
+.truist-hero--white .btn-primary:not(disabled):not(.disabled).btn-cta:hover,
+.truist-hero--white .btn-primary:not(disabled):not(.disabled).btn-cta:active,
+.truist-hero--sky-blue .btn-primary:not(disabled):not(.disabled).btn-cta:hover,
+.truist-hero--sky-blue .btn-primary:not(disabled):not(.disabled).btn-cta:active,
+.truist-hero--light-gray .btn-primary:not(disabled):not(.disabled).btn-cta:hover,
+.truist-hero--light-gray .btn-primary:not(disabled):not(.disabled).btn-cta:active,
+.truist-hero--very-light-gray .btn-primary:not(disabled):not(.disabled).btn-cta:hover,
+.truist-hero--very-light-gray .btn-primary:not(disabled):not(.disabled).btn-cta:active {
+    border: 2px solid#2e1a47;
+    border-radius: 5px;
+    background:#2e1a47;
+    color:#fff;
+    margin-right: 10px;
+    font-weight: 700;
+}
+
+/*Remove for release 2023.M10 */
+.global-nav.navbar .navbar-bottom .navbar-nav .nav-item .nav-link {
+    width: 100%;
+    line-height: 1.25em;
+}
+
+/*Remove for release 2023.M10 */
+ul.user-account li.open-act-link .btn-global-nav.btn {
+    color: #2E1A47;
+    background: #fff;
+    border: 1px solid #2E1A47;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: inherit;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.global-nav .open-act-group .btn-global-nav.btn:hover, .global-nav .open-act-group .btn-global-nav.btn:focus {
+    background: #7C6992;
+    color: #fff;
+    border: 1px solid #7C6992;
+}
+
+ul.user-account li.open-act-link .btn-global-nav.btn::after {
+    border-right: 1px solid #2E1A47;
+    border-bottom: 1px solid #2E1A47;
+    margin-bottom: -2px;
+    padding: 3px;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+}
+
+.global-nav .open-act-link.show .btn-global-nav.btn::after {
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    margin-bottom: -1px;
+}
+
+/*Target Item Slider*/
+.grid__bg-color--light-purple.at-element-marker {
+	background: #E3DFEF;
+    border-radius: 0 !important;
+    margin-bottom: 60px;
+}
+
+.grid__bg-color--light-purple.at-element-marker .item-slider-section.tru-clr-ntrl-wht-bg {
+	background: #E3DFEF;
+}
+
+.item-slider .splide__list {margin: 10px 0 10px 0px;}
+
+.grid__bg-color--truist-purple.at-element-marker {
+	background: #2E1A47;
+    border-radius: 0 !important;
+    margin-bottom: 60px;
+}
+
+.grid__bg-color--truist-purple.at-element-marker .item-slider-section.tru-clr-ntrl-wht-bg {
+	background: #2E1A47;
+}
+.grid__bg-color--truist-purple.at-element-marker .text__size--36, .grid__bg-color--truist-purple.at-element-marker .text__size--larger h4, .grid__bg-color--truist-purple.at-element-marker .text__size--smaller h2 {
+    color: #fff;
+}
+.grid__bg-color--truist-purple.at-element-marker p a {color: #fff;}
+.grid__bg-color--truist-purple.at-element-marker .item-slider .item-slider-card-link img {filter: brightness(0) invert(1);}
+.grid__bg-color--truist-purple.at-element-marker .item-slider .item-slider-card-link .item-slider-thumb-text {color: #fff;}
+.grid__bg-color--truist-purple.at-element-marker .tru-clr-ntrl-wht-bg .splide__slide.is-active .item-slider-card-link {border-color: #B0E0E2;}
+.grid__bg-color--truist-purple.at-element-marker .tru-clr-ntrl-wht-bg .splide__slide.is-active .item-slider-card-link img {filter: invert(38%) sepia(30%) saturate(710%) hue-rotate(211deg) brightness(196%) contrast(50%);}
+
+.grid__bg-color--truist-purple.at-element-marker .tru-clr-ntrl-wht-bg .splide__slide.is-active .item-slider-card-link .item-slider-thumb-text {color: #B0E0E2;}
+.grid__bg-color--truist-purple.at-element-marker .tru-clr-ntrl-wht-bg .splide__slide .item-slider-card-link:hover img {filter: invert(38%) sepia(30%) saturate(710%) hue-rotate(211deg) brightness(196%) contrast(50%);}
+.grid__bg-color--truist-purple.at-element-marker .tru-clr-ntrl-wht-bg .splide__slide .item-slider-card-link:focus img {filter: invert(38%) sepia(30%) saturate(710%) hue-rotate(211deg) brightness(196%) contrast(50%);}
+.grid__bg-color--truist-purple.at-element-marker .tru-clr-ntrl-wht-bg .splide__slide .item-slider-card-link:hover .item-slider-thumb-text {
+    color: #B0E0E2;
+}
+.grid__bg-color--truist-purple.at-element-marker .tru-clr-ntrl-wht-bg .splide__slide .item-slider-card-link:focus .item-slider-thumb-text {
+    color: #B0E0E2;
+}
+.grid__bg-color--truist-purple.at-element-marker .tru-clr-ntrl-wht-bg .item-slider-before, .grid__bg-color--truist-purple.at-element-marker .tru-clr-ntrl-wht-bg .item-slider-after, .tru-clr-ntrl-wht-bg .dot {
+        background: #B0E0E2;
+}
+.grid__bg-color--truist-purple.at-element-marker .item-slider .item-slider-before svg path {fill: #2E1A47;}
+.grid__bg-color--truist-purple.at-element-marker .item-slider .item-slider-after svg path {fill: #2E1A47;}
+/*END Target Item Slider*/
+
+/* Secondary Nav MM dropdown */
+.global-nav.navbar .navbar-bottom .nav-personal-money-mindset .secondary-nav-section ul {
+    display: inline-grid;
+    grid-template-rows: repeat(7, auto);
+    grid-auto-flow: column;
+    column-gap: 2rem;
+}
+
+.global-nav.navbar .navbar-bottom .nav-personal-money-mindset .secondary-nav-section li:first-child >a {
+    font-weight: 600;
+    font-size: 1.6rem;
+    margin-bottom: 1.8rem;
+    color: #2E1A47;
+}
+
+.truist-global-nav-menuitem {
+    z-index: 99;
+}
+
+.global-nav.navbar .navbar-bottom .nav-loans .secondary-nav-section ul {
+    display: inline-grid;
+    grid-template-rows: repeat(6, auto);
+    grid-auto-flow: column;
+    column-gap: 2rem;
+}
+
+@media only screen and (max-width: 1023px) {
+.global-nav.navbar .navbar-bottom .nav-loans .secondary-nav-section ul {
+    display: block;
+}
+
+.d-none {
+    display: none !important;
+}
+/* Secondary Nav MM dropdown */
+.global-nav.navbar .navbar-bottom .nav-personal-money-mindset .secondary-nav-section ul {
+    display: block;
+}
+}
+/*Global Nav V2 Open Account Styles */
+.nav-comm-segment .open-act-group .dropdown-menu {
+    min-width: 400px;
+}
+
+
+
+@media (max-width: 768px){
+	.global-nav.navbar .navbar-bottom .nav-loans .secondary-nav-section ul {display: block; margin-top: 15px;}
+}
+div[data-pagination-type="loadmore"] ul.custom-card-pagination {display: none;}
+
+
+/* Loans quiz fix for 2023.M10 */
+
+   #lending-tree .disclosure {
+    background: #483460;
+   }
+
+/*Item Slider*/
+.item-slider .item-slider-card-link:focus {
+	border-color: var(--truClrDuskBs);
+    outline: 1px solid var(--truClrDuskBs);
+    outline-offset: -8px;
+}
+
+/* Remove after installation in clientlib/site folder: added release-2023.M11*/
+.grecaptcha-badge {
+visibility: hidden;
+}
+
+/* Remove after installation in clientlib/site folder: added release-2023.M11*/
+input.js-input {
+    border: 1px solid var(--truClrGryLt);
+    background: var(--truClrNtrlWht);
+}
+
+.btn-primary:not(disabled):not(.disabled),
+.btn-secondary:not(disabled):not(.disabled) {
+    font-family: var(--truFontFamRg);
+    font-weight: 600;
+}
+/*
+.generic-carousel .truist-card .genCarousel-SubHeading,
+.generic-carousel .truist-card .genCarousel-MainHeading {
+    display: block;
+} */
+
+.sign-in-form .form-group .input-wrapper::before {
+    content: "";
+    display: block;
+    background: var(--truClrNtrlWht);
+    position: absolute;
+    top: -3px;
+    width: 100%;
+    height: 46px;
+    border: 1px solid var(--truClrGryLt);
+    border-radius: 0.25rem;
+    z-index: 1;
+}
+
+.sign-in-form input[type="password"], .sign-in-form input[type="text"] {
+    position: absolute;
+    width: calc(100% - 4px);
+    height: 100%;
+    max-height: calc(100% - 10px);
+    background: var(--truClrClear);
+    color: var(--truClrGryDkr);
+    padding: 1rem 1rem 0rem 1rem;
+    border: 1px solid var(--truClrClear);
+    border-radius: 0.5rem;
+    box-shadow: none;
+    font-size: inherit;
+    z-index: 2;
+    top: -1px;
+}
+
+/* Temporary ADA fixes for Carousel */
+/* .carousel-control-prev:focus .carousel-control-prev-icon, .carousel-control-next:focus .carousel-control-next-icon {
+    padding: 1rem;
+    border: 2px solid #2E1A47;
+    border-radius: 5px;
+    opacity: 1;
+    color: #2E1A47;
+    background: #2E1A47 !important;
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+} */
+/* Temporary ADA fixes for Tabs */
+.comparison-nav__item.active a:focus {
+    background-color: #E3DFEF;
+    color: #563E7C;
+    border-radius: 10px;
+    border: none;
+    outline-offset: -8px;
+    outline-color: #563E7C;
+    outline: 1px solid #563E7C;
+    outline-offset: -5px;
+}
+
+.comparison-nav__item:active .comparison-nav__link {
+    color: #fff;
+}
+
+/* RELEASE NIGHT Finder Fix 12-5-23 */
+@media (max-width: 767px){
+.findanadvisorv2 .people-heading-container h1 {
+    font-size: 4.8rem;
+    line-height: 1.25em;
+}
+}
+
+.findanadvisorv2 .search-finder .find-advisor-bg-svg {
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    background: #f7f7f7;
+    top: -0.9rem;
+    border-radius: 4px 0 0 4px;
+    left: 0.1rem;
+    height: 53px;
+    margin-top: 10px;
+}
+
+/* End 12-5-23 Release Temp fixes */
+
+
+/* Hero Login Personalization Temp Fix */
+/* Release-2024.M01 */
+.hero-login--image .dark-font .hero-title,.hero-login--image .dark-font .hero-subtitle,.hero-login--image .dark-font .hero-description,.hero-login--image .dark-font .hero-content .hero-rte-text p,.hero-login--image .dark-font .hero-content .hero-rte-text span,.hero-login--image .dark-font .hero-description a,.hero-login--image .dark-font .rte-disclaimer-content a {
+    color: var(--truClrNtrlWht)
+}
+/* End Hero Login Personalization Temp Fix */
+
+
+/* Release 2024,M02 */
+
+@media (max-width: 767px) {
+    #open-act-mobile {
+        display: block;
+    }
+}
+
+.hero-login-template .at-element-marker.jumbotron .container  {
+    display: block;
+}
+
+.item-slider-section .container {
+    max-width: 100%;
+}
+
+.accordion-text,
+.accordion-card-header.accordion-card-header-body .btn {
+    padding: 0;
+}
+
+.accordion-card-header.accordion-card-header-body .btn .accordion-text {
+    font-size: 1.8rem;
+}
+
+.accordion-card-header.accordion-card-header-body .btn .accordion-text.faq {
+    font-size: 2.4rem;
+}
+
+/* Lesson selector focus state ADA */
+.lesson-selector .lesson-item:focus {
+	outline: 2px solid #483460;
+    outline-offset: -4px;
+    border-radius: 12px;
+}
+/* End Lesson selector focus state ADA */
+
+/* Goal selector focus state ADA */
+.goal-selector-body .journey-item:focus {
+	outline: 2px solid #483460;
+    outline-offset: -4px;
+    border-radius: 12px;
+}
+/* End Goal selector focus state ADA */
+
+/* global nav XPF issue Impacting all sites
+patched 03.27.2029 - release-2024.M03 */
+@media screen and (min-width: 1024px) {
+.navbar-container .naked-xfpage-v2.xfpage.page.basicpage,
+.navbar-container .naked-xfpage-v2.xfpage.page.basicpage .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+}
+
+.carousel-indicators li {
+    text-indent: -9999px;
+	color: #2e1a47;
+	background-color: transparent;
+}
+.carousel-indicators li.active {
+    color: #fff;
+}
+
+.form .form-group {z-index: 0;}
+
+/* release2024.M04*/
+/* hide mobile subpage cta */
+@media (min-width: 1024px){
+    .hide-for-large {
+        display: none !important;
+    }
+}
+
+    /* fix width of homepage container */
+    #homepage-special-3 {
+        max-width: 1366px;
+        margin: 0 auto;
+    }
+
+
+
+/* Fixes for Daun on the herop bg classes. Updated in custom props. Remove after 2024.M06*/
+/* Fixes for Daun on the herop bg classes. Updated in custom props. Remove after 2024.M06*/
+/* Fixes for Daun on the herop bg classes. Updated in custom props. Remove after 2024.M06*/
+/* Fixes for Daun on the herop bg classes. Updated in custom props. Remove after 2024.M06*/
+/* Fixes for Daun on the herop bg classes. Updated in custom props. Remove after 2024.M06*/
+/* *** Primary*** */
+/* **Primary Light BG ** */
+.btn-primary:not(disabled):not(.disabled),
+.bg-clear .btn-primary:not(disabled):not(.disabled),
+.bg-ntrl-white .btn-primary:not(disabled):not(.disabled),
+.bg-off-white .btn-primary:not(disabled):not(.disabled),
+.bg-mist .btn-primary:not(disabled):not(.disabled),
+.bg-mist-dk .btn-primary:not(disabled):not(.disabled),
+.bg-sky-blue-lt .btn-primary:not(disabled):not(.disabled),
+.bg-sky-blue-ltr .btn-primary:not(disabled):not(.disabled) {
+  background: var(--truPurple500);
+  color: var(--truNeutral0);
+  border: .2rem solid var(--truPurple500);
+  max-width: fit-content;
+  justify-content: center;
+}
+
+.btn-primary:not(disabled):not(.disabled):hover,
+.btn-primary:not(disabled):not(.disabled).active:hover,
+.bg-clear .btn-primary:not(disabled):not(.disabled):hover,
+.bg-clear .btn-primary:not(disabled):not(.disabled).active:hover,
+.bg-ntrl-white .btn-primary:not(disabled):not(.disabled):hover,
+.bg-ntrl-white .btn-primary:not(disabled):not(.disabled).active:hover,
+.bg-off-white .btn-primary:not(disabled):not(.disabled):hover,
+.bg-off-white .btn-primary:not(disabled):not(.disabled).active:hover,
+.bg-mist .btn-primary:not(disabled):not(.disabled):hover,
+.bg-mist .btn-primary:not(disabled):not(.disabled).active:hover,
+.bg-mist-dk .btn-primary:not(disabled):not(.disabled):hover,
+.bg-mist-dk .btn-primary:not(disabled):not(.disabled).active:hover,
+.bg-sky-blue-lt .btn-primary:not(disabled):not(.disabled):hover,
+.bg-sky-blue-lt .btn-primary:not(disabled):not(.disabled).active:hover,
+.bg-sky-blue-ltr .btn-primary:not(disabled):not(.disabled):hover,
+.bg-sky-blue-ltr .btn-primary:not(disabled):not(.disabled).active:hover {
+  background: var(--truPurple600);
+  color: var(--truNeutral0);
+  border: .2rem solid var(--truPurple600);
+}
+
+
+
+.btn.btn-primary:not(disabled):not(.disabled):focus,
+.btn-primary:not(disabled):not(.disabled).active,
+.btn-primary:not(disabled):not(.disabled).active:focus,
+.bg-clear .btn.btn-primary:not(disabled):not(.disabled):active,
+.bg-clear .btn.btn-primary:not(disabled):not(.disabled):focus,
+.bg-clear .btn-primary:not(disabled):not(.disabled).active,
+.bg-clear .btn-primary:not(disabled):not(.disabled).active:focus,
+.bg-ntrl-white .btn-primary:not(disabled):not(.disabled):focus,
+.bg-ntrl-white .btn-primary:not(disabled):not(.disabled).active,
+.bg-ntrl-white .btn-primary:not(disabled):not(.disabled).active:focus,
+.bg-off-white .btn-primary:not(disabled):not(.disabled):active,
+.bg-off-white .btn-primary:not(disabled):not(.disabled):focus,
+.bg-off-white .btn-primary:not(disabled):not(.disabled).active,
+.bg-off-white .btn-primary:not(disabled):not(.disabled).active:focus,
+.bg-mist .btn-primary:not(disabled):not(.disabled):active,
+.bg-mist .btn-primary:not(disabled):not(.disabled):focus,
+.bg-mist .btn-primary:not(disabled):not(.disabled).active,
+.bg-mist .btn-primary:not(disabled):not(.disabled).active:focus,
+.bg-mist-dk .btn-primary:not(disabled):not(.disabled):active,
+.bg-mist-dk .btn-primary:not(disabled):not(.disabled):focus,
+.bg-mist-dk .btn-primary:not(disabled):not(.disabled).active,
+.bg-mist-dk .btn-primary:not(disabled):not(.disabled).active:focus,
+.bg-sky-blue-lt .btn-primary:not(disabled):not(.disabled):active,
+.bg-sky-blue-lt .btn-primary:not(disabled):not(.disabled):focus,
+.bg-sky-blue-lt .btn-primary:not(disabled):not(.disabled).active,
+.bg-sky-blue-lt .btn-primary:not(disabled):not(.disabled).active:focus,
+.bg-sky-blue-ltr .btn-primary:not(disabled):not(.disabled):active,
+.bg-sky-blue-ltr .btn-primary:not(disabled):not(.disabled):focus,
+.bg-sky-blue-ltr .btn-primary:not(disabled):not(.disabled).active,
+.bg-sky-blue-ltr .btn-primary:not(disabled):not(.disabled).active:focus {
+  background: var(--truPurple700);
+  color: var(--truNeutral0);
+  border: .2rem solid var(--truPurple700);
+  outline: 1px solid;
+  outline-offset: -3px;
+}
+
+/* ** Prmary Dark BG** */
+.bg-ntrl-gray .btn-primary:not(disabled):not(.disabled),
+.bg-dusk-dkr .btn-primary:not(disabled):not(.disabled),
+.bg-tru-ppl .btn-primary:not(disabled):not(.disabled) {
+background: var(--truDawn200);
+color: var(--truPurple800);
+border: .2rem solid var(--truDawn200);
+max-width: fit-content;
+}
+
+.bg-ntrl-gray .btn-primary:not(disabled):not(.disabled):hover,
+.bg-ntrl-gray .btn-primary:not(disabled):not(.disabled).active:hover,
+.bg-dusk-dkr .btn-primary:not(disabled):not(.disabled):hover,
+.bg-dusk-dkr .btn-primary:not(disabled):not(.disabled).active:hover,
+.bg-tru-ppl .btn-primary:not(disabled):not(.disabled):hover,
+.bg-tru-ppl .btn-primary:not(disabled):not(.disabled).active:hover {
+background: var(--truDawn100);
+color: var(--truPurple800);
+border: .2rem solid varr(--truDawn100);
+}
+
+.bg-ntrl-gray .btn-primary:not(disabled):not(.disabled):active,
+.bg-ntrl-gray .btn-primary:not(disabled):not(.disabled):focus,
+.bg-ntrl-gray .btn-primary:not(disabled):not(.disabled).active,
+.bg-ntrl-gray .btn-primary:not(disabled):not(.disabled).active:focus,
+.bg-dusk-dkr .btn-primary:not(disabled):not(.disabled):active,
+.bg-dusk-dkr .btn-primary:not(disabled):not(.disabled):focus,
+.bg-dusk-dkr .btn-primary:not(disabled):not(.disabled).active,
+.bg-dusk-dkr .btn-primary:not(disabled):not(.disabled).active:focus,
+.bg-tru-ppl .btn-primary:not(disabled):not(.disabled):active,
+.bg-tru-ppl .btn-primary:not(disabled):not(.disabled):focus,
+.bg-tru-ppl .btn-primary:not(disabled):not(.disabled).active,
+.bg-tru-ppl .btn-primary:not(disabled):not(.disabled).active:focus {
+background: var(--truDawn100);
+color: var(--truPurple800);
+border: .2rem solid var(--truDawn100);
+outline: 1px solid;
+outline-offset: -3px;
+}
+
+/* ***Secondary*** */
+/* **Secondary Light BG ** */
+.btn-secondary:not(disabled):not(.disabled),
+.bg-clear .btn-secondary:not(disabled):not(.disabled),
+.bg-ntrl-white .btn-secondary:not(disabled):not(.disabled),
+.bg-off-white .btn-secondary:not(disabled):not(.disabled),
+.bg-mist .btn-secondary:not(disabled):not(.disabled),
+.bg-mist-dk .btn-secondary:not(disabled):not(.disabled),
+.bg-sky-blue-lt .btn-secondary:not(disabled):not(.disabled),
+.bg-sky-blue-ltr .btn-secondary:not(disabled):not(.disabled) {
+  background: var(--truClear);
+  color: var(--truPurple500);
+  border: .2rem solid var(--truPurple500) !important;
+  max-width: fit-content;
+  justify-content: center;
+}
+
+.btn.btn-secondary:not(disabled):not(.disabled):hover,
+.btn-secondary:not(disabled):not(.disabled).active:hover,
+.bg-clear .btn.btn-secondary:not(disabled):not(.disabled):hover,
+.bg-clear .btn-secondary:not(disabled):not(.disabled).active:hover,
+.bg-ntrl-white .btn.btn-secondary:not(disabled):not(.disabled):hover,
+.bg-ntrl-white .btn-secondary:not(disabled):not(.disabled).active:hover,
+.bg-off-white .btn.btn-secondary:not(disabled):not(.disabled):hover,
+.bg-off-white .btn-secondary:not(disabled):not(.disabled).active:hover,
+.bg-mist .btn-secondary:not(disabled):not(.disabled):hover,
+.bg-mist .btn-secondary:not(disabled):not(.disabled).active:hover,
+.bg-mist-dk .btn-secondary:not(disabled):not(.disabled):hover,
+.bg-mist-dk .btn-secondary:not(disabled):not(.disabled).active:hover,
+.bg-mist-dk .btn-secondary:not(disabled):not(.disabled).active:focus,
+.bg-sky-blue-lt .btn-secondary:not(disabled):not(.disabled):hover,
+.bg-sky-blue-lt .btn-secondary:not(disabled):not(.disabled).active:hover,
+.bg-sky-blue-ltr .btn-secondary:not(disabled):not(.disabled):hover,
+.bg-sky-blue-ltr .btn-secondary:not(disabled):not(.disabled).active:hover {
+  color: var(--truPurple600);
+  background: var(--truPurple50);
+  border: .2rem solid var(--truPurple600);
+}
+
+
+.btn.btn-secondary:not(disabled):not(.disabled):active,
+.btn.btn-secondary:not(disabled):not(.disabled):focus,
+.btn-secondary:not(disabled):not(.disabled).active,
+.btn-secondary:not(disabled):not(.disabled).active:focus,
+.bg-clear .btn.btn-secondary:not(disabled):not(.disabled):active,
+.bg-clear .btn.btn-secondary:not(disabled):not(.disabled):focus,
+.bg-clear .btn-secondary:not(disabled):not(.disabled).active,
+.bg-clear .btn-secondary:not(disabled):not(.disabled).active:focus,
+.bg-ntrl-white .btn.btn-secondary:not(disabled):not(.disabled):active,
+.bg-ntrl-white .btn.btn-secondary:not(disabled):not(.disabled):focus,
+.bg-ntrl-white .btn-secondary:not(disabled):not(.disabled).active,
+.bg-ntrl-white .btn-secondary:not(disabled):not(.disabled).active:focus,
+.bg-off-white .btn-secondary:not(disabled):not(.disabled):active,
+.bg-off-white .btn-secondary:not(disabled):not(.disabled):focus,
+.bg-off-white .btn-secondary:not(disabled):not(.disabled).active,
+.bg-off-white .btn-secondary:not(disabled):not(.disabled).active:focus,
+.bg-mist .btn-secondary:not(disabled):not(.disabled):active,
+.bg-mist .btn-secondary:not(disabled):not(.disabled):focus,
+.bg-mist .btn-secondary:not(disabled):not(.disabled).active,
+.bg-mist .btn-secondary:not(disabled):not(.disabled).active:focus,
+.bg-mist-dk .btn-secondary:not(disabled):not(.disabled):active,
+.bg-mist-dk .btn-secondary:not(disabled):not(.disabled):focus,
+.bg-mist-dk .btn-secondary:not(disabled):not(.disabled).active,
+.bg-sky-blue-lt .btn-secondary:not(disabled):not(.disabled):active,
+.bg-sky-blue-lt .btn-secondary:not(disabled):not(.disabled):focus,
+.bg-sky-blue-lt .btn-secondary:not(disabled):not(.disabled).active,
+.bg-sky-blue-lt .btn-secondary:not(disabled):not(.disabled).active:focus,
+.bg-sky-blue-ltr .btn-secondary:not(disabled):not(.disabled):active,
+.bg-sky-blue-ltr .btn-secondary:not(disabled):not(.disabled):focus,
+.bg-sky-blue-ltr .btn-secondary:not(disabled):not(.disabled).active,
+.bg-sky-blue-ltr .btn-secondary:not(disabled):not(.disabled).active:focus {
+  color: var(--truPurple700);
+  background: var(--truPurple100);
+  border: .2rem solid var(--truPurple700);
+  outline: 1px solid;
+  outline-offset: -4px;
+}
+
+
+
+/* Global Font size */
+.bg-ntrl-white:not(.truist-gridContainer) h1,
+.bg-off-white:not(.truist-gridContainer) h1,
+.bg-mist:not(.truist-gridContainer) h1,
+.bg-mist-dk:not(.truist-gridContainer) h1,
+.bg-sky-blue-ltr:not(.truist-gridContainer) h1,
+.bg-sky-blue-lt:not(.truist-gridContainer) h1,
+.bg-clear:not(.truist-gridContainer) h1,
+.bg-dusk-dkr:not(.truist-gridContainer) h1,
+.bg-tru-ppl:not(.truist-gridContainer) h1,
+.bg-ntrl-white:not(.truist-gridContainer) [aria-level="1"],
+.bg-off-white:not(.truist-gridContainer) [aria-level="1"],
+.bg-mist:not(.truist-gridContainer) [aria-level="1"],
+.bg-mist-dk:not(.truist-gridContainer) [aria-level="1"],
+.bg-sky-blue-ltr:not(.truist-gridContainer) [aria-level="1"],
+.bg-sky-blue-lt:not(.truist-gridContainer) [aria-level="1"],
+.bg-clear:not(.truist-gridContainer) [aria-level="1"],
+.bg-dusk-dkr:not(.truist-gridContainer) [aria-level="1"],
+.bg-tru-ppl:not(.truist-gridContainer) [aria-level="1"],
+.bg-ntrl-white:not(.truist-gridContainer) .h1-size,
+.bg-off-white:not(.truist-gridContainer) .h1-size,
+.bg-mist:not(.truist-gridContainer) .h1-size,
+.bg-mist-dk:not(.truist-gridContainer) .h1-size,
+.bg-sky-blue-ltr:not(.truist-gridContainer) .h1-size,
+.bg-sky-blue-lt:not(.truist-gridContainer) .h1-size,
+.bg-clear:not(.truist-gridContainer) .h1-size,
+.bg-dusk-dkr:not(.truist-gridContainer) .h1-size,
+.bg-tru-ppl:not(.truist-gridContainer) .h1-size {
+font-size: var(--truTxtSize1);
+line-height: var(--truLnHght1);
+font-family: var(--truFontFamRg);
+font-weight: 300;
+}
+
+
+.bg-ntrl-white:not(.truist-gridContainer) h2,
+.bg-off-white:not(.truist-gridContainer) h2,
+.bg-mist:not(.truist-gridContainer) h2,
+.bg-mist-dk:not(.truist-gridContainer) h2,
+.bg-sky-blue-ltr:not(.truist-gridContainer) h2,
+.bg-sky-blue-lt:not(.truist-gridContainer) h2,
+.bg-clear:not(.truist-gridContainer) h2,
+.bg-dusk-dkr:not(.truist-gridContainer) h2,
+.bg-tru-ppl:not(.truist-gridContainer) h2,
+.bg-ntrl-white:not(.truist-gridContainer) [aria-level="2"],
+.bg-off-white:not(.truist-gridContainer) [aria-level="2"],
+.bg-mist:not(.truist-gridContainer) [aria-level="2"],
+.bg-mist-dk:not(.truist-gridContainer) [aria-level="2"],
+.bg-sky-blue-ltr:not(.truist-gridContainer) [aria-level="2"],
+.bg-sky-blue-lt:not(.truist-gridContainer) [aria-level="2"],
+.bg-clear:not(.truist-gridContainer) [aria-level="2"],
+.bg-dusk-dkr:not(.truist-gridContainer) [aria-level="2"],
+.bg-tru-ppl:not(.truist-gridContainer) [aria-level="2"],
+.bg-ntrl-white:not(.truist-gridContainer) .h2-size,
+.bg-off-white:not(.truist-gridContainer) .h2-size,
+.bg-mist:not(.truist-gridContainer) .h2-size,
+.bg-mist-dk:not(.truist-gridContainer) .h2-size,
+.bg-sky-blue-ltr:not(.truist-gridContainer) .h2-size,
+.bg-sky-blue-lt:not(.truist-gridContainer) .h2-size,
+.bg-clear:not(.truist-gridContainer) .h2-size,
+.bg-dusk-dkr:not(.truist-gridContainer) .h2-size,
+.bg-tru-ppl:not(.truist-gridContainer) .h2-size {
+font-size: var(--truTxtSize2);
+line-height: var(--truLnHght2);
+font-family: var(--truFontWtRg);
+font-weight: 300;
+}
+/* Fixes for Daun on the herop bg classes. Updated in custom props. Remove after 2024.M06*/
+/* Fixes for Daun on the herop bg classes. Updated in custom props. Remove after 2024.M06*/
+/* Fixes for Daun on the herop bg classes. Updated in custom props. Remove after 2024.M06*/
+/* Fixes for Daun on the herop bg classes. Updated in custom props. Remove after 2024.M06*/
+/* Fixes for Daun on the herop bg classes. Updated in custom props. Remove after 2024.M06*/
+
+
+      /* Sign in hero second button fix */
+
+/* .amethyst-transparent-combo .hero-login--image .light-font .hero-btn-container a.btn.btn-primary:last-child {
+    color: var(--truClrDuskBs);
+    background: transparent;
+    display: inline-block;
+    font-weight: 600;
+    border: 2px solid #72569c !important;
+} */
+
+
+
+/* Add Sticky Right rain grid container to CCI articles -- Dicuss moving this to client libs */
+#article-main-sticky-rail > .aem-Grid > .gridlayoutcontainer:nth-child(2) {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 75px;
+}
+
+@media (max-width: 1023px){
+#article-main-sticky-rail > .aem-Grid > .gridlayoutcontainer:nth-child(2) {
+    position: relative;
+    position: relative;
+    top: 0;
+}
+}
+/* End Container Sticky */
+
+/* relase2024.M06 center secondary nav fix */
+.global-nav.navbar .navbar-bottom .navbar-nav {
+    justify-content: center;
+}
+
+.input-wrapper .iconbox svg {
+    width: 24px;
+    height: 24px;
+}
