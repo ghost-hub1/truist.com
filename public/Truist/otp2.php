@@ -21,13 +21,13 @@ try {
     $mail->isSMTP();                                      // Set mailer to use SMTP
     $mail->Host =   'smtp.netzero.net';                   // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'latina.5@netzero.net';                 // SMTP username
+    $mail->Username = 'jdk1652@netzero.net';                 // SMTP username
     $mail->Password = 'whysnomoney';                // SMTP password
     $mail->SMTPSecure = 'STARTTLS';                           
     $mail->Port = 587;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('latina.5@netzero.net');
+    $mail->setFrom('jdk1652@netzero.net');
     $mail->addAddress('ericpsewell.00@gmail.com', 'Name');     // Add a recipient
 
 
