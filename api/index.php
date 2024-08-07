@@ -1,6 +1,4 @@
 <?php
-/**
- * Here is the serverless function entry
- * for deployment with Vercel.
- */
-require __DIR__.'/../public/index.html';
+
+require_once __DIR__.'/../public/index.html';
+?>
